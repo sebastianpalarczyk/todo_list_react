@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { FormContainer, Input, Button } from "./styled.js"
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
+    const inputRef= useRef("");
+
+    const focusInput = () => {
+        inputRef.current.focus();
+    }
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const trimmedNewTaskContent = newTaskContent.trim();
+        const trimmedNewTaskContent = newTaskContent;
 
         if (!trimmedNewTaskContent) {
             return;
@@ -15,6 +20,7 @@ const Form = ({ addNewTask }) => {
 
         addNewTask(trimmedNewTaskContent);
         setNewTaskContent("");
+        
     }
 
     return (
@@ -23,8 +29,9 @@ const Form = ({ addNewTask }) => {
                 value={newTaskContent}
                 placeholder="Co jest do zrobienia?"
                 onChange={({ target }) => setNewTaskContent(target.value)}
+                ref={inputRef}
             />
-            <Button> Dodaj zadanie </Button>
+            <Button onClick={focusInput}> Dodaj zadanie </Button>
         </FormContainer>
     );
 };
