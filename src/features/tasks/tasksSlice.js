@@ -1,4 +1,4 @@
-import { createSlice } from "@redux.js/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const tasksSlice = createSlice({
     name: "tasks",
@@ -16,3 +16,4 @@ const tasksSlice = createSlice({
 export const { addTask } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
 export default tasksSlice.reducer;
+ 
