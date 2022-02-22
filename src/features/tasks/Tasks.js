@@ -17,7 +17,6 @@ function Tasks() {
     //tasks,
     removeTask,
     toggleTaskDone,
-    setAllDone,
     addNewTask,
   } = useTasks();
 
@@ -32,9 +31,7 @@ function Tasks() {
           removeTask={removeTask}
           toggleTaskDone={toggleTaskDone}
         />}
-        extraHeaderContent={<Buttons
-          setAllDone={setAllDone}
-        />}
+        extraHeaderContent={<Buttons/>}
       />
     </Container>
   );
