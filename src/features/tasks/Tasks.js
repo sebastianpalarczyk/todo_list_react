@@ -13,7 +13,7 @@ function Tasks() {
 
   const {
     //tasks,
-    removeTask,
+    // removeTask,
     // toggleTaskDone,
   } = useTasks();
 
@@ -24,9 +24,7 @@ function Tasks() {
         body={<Form/>}
       />
       <Section title="Lista zadań"
-        body={<TaskList
-          removeTask={removeTask}
-        />}
+        body={<TaskList/>}
         extraHeaderContent={<Buttons/>}
       />
     </Container>
