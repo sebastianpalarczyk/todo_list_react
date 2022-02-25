@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasks, toggleHideDone, setAllDone } from "../tasksSlice";
+import { selectTasks, toggleHideDone, setAllDone, fetchExampleTasks } from "../tasksSlice";
 import { Container, Button } from "./styled";
 
 const Buttons = () => {
@@ -8,8 +8,12 @@ const Buttons = () => {
   const dispatch = useDispatch();
   
   return (
-    tasks.length > 0 && (
       <Container>
+        <Button onClick={() => dispatch(fetchExampleTasks())}>
+          Pobierz przykładowe zadania
+        </Button>
+        {tasks.length > 0 && (
+        <>
         <Button onClick={() => {dispatch(toggleHideDone())}}>
           {hideDone ? "Pokaż" : "Ukryj"} ukończone
         </Button>
@@ -19,8 +23,10 @@ const Buttons = () => {
         >
           Ukończ wszystkie
         </Button>
+        </>
+        )}
       </Container>
-    )
+    
   
 )};
 
