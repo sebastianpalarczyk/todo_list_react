@@ -12,7 +12,7 @@ export const FormContainer = styled.form`
 
 export const Input = styled.input`
     padding: 10px;
-    border: 1px solid ${(theme) => theme.color.alto};
+    border: 1px solid ${({theme}) => theme.color.alto};
 `;
 
 export const Button = styled.button`

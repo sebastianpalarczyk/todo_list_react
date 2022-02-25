@@ -34,7 +34,7 @@ export const Button = styled.button`
     transition: filter 0.3s;
 
     ${({ toggleDone }) => toggleDone && css`
-        background-color: ${({theme}) => theme.color.forestreen};
+        background-color: ${({theme}) => theme.color.forestGreen};
 
         &:hover{
             filter: brightness(110%);
