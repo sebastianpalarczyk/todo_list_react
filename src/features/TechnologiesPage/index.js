@@ -5,7 +5,8 @@ import Section from "../../common/Section";
 
 
 
-export default () => (
+const TechnologiesPage = () => (
+    
     <Container>
         <Header title="Technologie wykorzystane w projekcie" />
         <Section title="W projekcie zostały użyte biblioteki:"
@@ -32,3 +33,5 @@ export default () => (
         />
     </Container>
 );
+
+export default TechnologiesPage;

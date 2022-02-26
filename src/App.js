@@ -1,26 +1,34 @@
 import React from "react";
-import { HashRouter, Link, Switch, Route, NavLink } from "react-router-dom";
-import Tasks from "./features/tasks/Tasks";
-import Technologies from "./features/technologies/Technologies";
+import { HashRouter, Switch, Route, NavLink, Redirect } from "react-router-dom";
+import TasksPage from "./features/tasks/TasksPage";
+import TaskPage from "./features/tasks/TaskPage";
+import TechnologiesPage from "./features/TechnologiesPage";
 
 
 const App = () => (
+
     <HashRouter basename="/todo_list_react">
         <nav>
             <ul>
                 <li>
-                    <NavLink exact to="/home">Strona główna</NavLink>
+                    <NavLink exact to="/zadania">Lista zadań</NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/technologies">Technologie</NavLink>
+                    <NavLink exact to="/technologie">Technologie</NavLink>
                 </li>
             </ul>
             <Switch>
-                <Route path="/home">
-                    <Tasks />
+                <Route path="/zadania/:id">
+                    <TaskPage />
                 </Route>
-                <Route path="/technologies">
-                    <Technologies/>
+                <Route exact path="/zadania">
+                    <TasksPage />
+                </Route>
+                <Route exact path="/technologie">
+                    <TechnologiesPage />
+                </Route>
+                <Route path="/">
+                    <Redirect to="/zadania" />
                 </Route>
             </Switch>
         </nav>
