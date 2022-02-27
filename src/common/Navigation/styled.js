@@ -7,13 +7,14 @@ export const List = styled.ul`
    background-color: ${({theme}) => theme.color.teal};
    display: flex;
    justify-content: flex-end;
-   padding: 30px;
+   margin: 0;
+   padding: 0;
    flex-wrap: wrap;
    list-style-type: none;
 `;
 
 export const Item = styled.li`
-   margin: 10px;
+   margin: 30px;
    text-decoration: none;
    font-size: 20px;
 `;
