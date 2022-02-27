@@ -9,7 +9,7 @@ import { toTask, toTasks, toTechnologies } from "./routes";
 
 const App = () => (
 
-    <HashRouter basename="/todo_list_react">
+    <HashRouter>
         
         <Navigation />
 
