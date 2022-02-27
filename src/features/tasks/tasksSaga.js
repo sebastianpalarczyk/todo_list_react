@@ -9,7 +9,7 @@ function* fetchExampleTasksHandler(){
         const exampleTasks = yield call(getExampleTasks);
         yield put(setTasks(exampleTasks));
     }catch(error){
-        yield call(alert, "coś poszlo nie tak");
+        yield call(alert, "Brak połączenia z internetem lub server nie odpowiada!");
     }
 }
 

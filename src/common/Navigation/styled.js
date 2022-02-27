@@ -3,10 +3,6 @@ import styled from "styled-components";
 
 const activeClassName = "active";
 
-export const Nav = styled.nav`
-   margin: 0;
-`;
-
 export const List = styled.ul`
    background-color: ${({theme}) => theme.color.teal};
    display: flex;
@@ -16,7 +12,7 @@ export const List = styled.ul`
    list-style-type: none;
 `;
 
-export const Row = styled.li`
+export const Item = styled.li`
    margin: 10px;
    text-decoration: none;
    font-size: 20px;
