@@ -3,21 +3,21 @@ import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import TechnologiesPage from "./features/TechnologiesPage";
-import { StyledNavLink } from "./styled";
+import { Nav, List, Row, StyledNavLink} from "./common/Navigation/styled";
 
 
 const App = () => (
 
     <HashRouter basename="/todo_list_react">
-        <nav>
-            <ul>
-                <li>
+        <Nav>
+            <List>
+                <Row>
                     <StyledNavLink exact to="/zadania">Lista zadań</StyledNavLink>
-                </li>
-                <li>
+                </Row>
+                <Row>
                     <StyledNavLink exact to="/technologie">Technologie</StyledNavLink>
-                </li>
-            </ul>
+                </Row>
+            </List>
             <Switch>
                 <Route path="/zadania/:id">
                     <TaskPage />
@@ -32,7 +32,7 @@ const App = () => (
                     <Redirect to="/zadania" />
                 </Route>
             </Switch>
-        </nav>
+        </Nav>
     </HashRouter>
 )
 
