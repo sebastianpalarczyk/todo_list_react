@@ -64,6 +64,6 @@ export const LinkTask = styled(Link)`
     color: ${({theme}) => theme.color.black};
 
     &:hover{
-        color: ${({theme}) => theme.color.alto};
+        text-decoration: solid;
     }
 `;
