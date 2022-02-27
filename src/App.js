@@ -1,8 +1,9 @@
 import React from "react";
-import { HashRouter, Switch, Route, NavLink, Redirect } from "react-router-dom";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import TechnologiesPage from "./features/TechnologiesPage";
+import { StyledNavLink } from "./styled";
 
 
 const App = () => (
@@ -11,10 +12,10 @@ const App = () => (
         <nav>
             <ul>
                 <li>
-                    <NavLink exact to="/zadania">Lista zadań</NavLink>
+                    <StyledNavLink exact to="/zadania">Lista zadań</StyledNavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/technologie">Technologie</NavLink>
+                    <StyledNavLink exact to="/technologie">Technologie</StyledNavLink>
                 </li>
             </ul>
             <Switch>
