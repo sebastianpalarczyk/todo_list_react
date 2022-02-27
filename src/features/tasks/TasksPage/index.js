@@ -6,7 +6,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from "./Search";
-import ButtonExampleTasks from "./Button";
+import FetchExampleTasksButton from "./FetchExampleTasksButton";
 
 const TasksPage = () => {
 
@@ -15,7 +15,7 @@ const TasksPage = () => {
       <Header title="Lista zadań" />
       <Section title="Dodaj nowe zadanie"
         body={<Form />}
-        extraHeaderContent={<ButtonExampleTasks />}
+        extraHeaderContent={<FetchExampleTasksButton />}
       />
       <Section title="Wyszukiwarka"
         body={<Search />}

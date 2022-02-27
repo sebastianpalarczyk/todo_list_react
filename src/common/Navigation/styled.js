@@ -24,7 +24,11 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
     text-decoration: none;
     color: ${({theme}) => theme.color.white};
     
-     &.active {
-        filter: brightness(60%);
+    &.active {
+        filter: brightness(70%);
+    }
+
+    &:hover {
+        text-decoration: underline;
     }
 `;
