@@ -34,7 +34,7 @@
   </li>
   <li>
     <strong>Navigation</strong>
-    <p>There is a navigation at the top, so you can switch between the task list and the page about author where you can find a brief about me.</p>
+    <p>There is a navigation at the top, so you can switch between the task list and the page about technologies which used in the project.</p>
   </li>
 </ul>
 
