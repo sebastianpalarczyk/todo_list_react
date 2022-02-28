@@ -41,7 +41,7 @@
 <p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a></p>
 
 ## Overview
-<img src="demo.gif" alt="Welcome gif" width="600">
+<img src="demo.mp4" alt="Welcome gif" width="600">
 
 ## Demo
 
