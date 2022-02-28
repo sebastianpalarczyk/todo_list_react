@@ -12,19 +12,34 @@ const TechnologiesPage = () => (
             body={
                 <List>
                     <Item>
-                        React
+                        HTML
                     </Item>
                     <Item>
-                        Redux
+                        CSS (Grid, Flex, media queries)
                     </Item>
                     <Item>
-                        Redux Saga
+                        JavaScript (ES6+)
+                    </Item>
+                    <Item>
+                        Promise, async / await
+                    </Item>
+                    <Item>
+                        Create React App
+                    </Item>
+                    <Item>
+                        React Hooks
                     </Item>
                     <Item>
                         React Router
                     </Item>
                     <Item>
                         Styled Components
+                    </Item>
+                    <Item>
+                        Redux
+                    </Item>
+                    <Item>
+                        Redux-Saga
                     </Item>
                 </List>
             }
